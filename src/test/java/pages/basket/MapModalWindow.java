@@ -12,7 +12,7 @@ public class MapModalWindow {
         private final ElementsCollection firstAddress = $$x("//ul[@class='rGg6R']/li");
         private final SelenideElement setUpAddress = $x("//div[@class='_1H6O9']/div/div/button");
 
-        @Step
+        @Step("Смена модального окна на 'Курьер' и установка адреса")
         public String setAddress(String address, String apartment, String entrance, String floor, String intercom) throws InterruptedException {
             $x("//div[@class='_27s-P']/div/div/span[text()='Курьер']").click();
 
